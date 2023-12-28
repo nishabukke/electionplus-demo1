@@ -10,6 +10,23 @@
     <title>Document</title>
 </head>
 <body>
+    <div class="preloader" id="preloader">
+        <div class="preloader-inner">
+            <div class="lines">
+                <span class="line line-1"></span>
+                <span class="line line-2"></span>
+                <span class="line line-3"></span>
+                <span class="line line-4"></span>
+                <span class="line line-5"></span>
+                <span class="line line-6"></span>
+                <span class="line line-7"></span>
+                <span class="line line-8"></span>
+                <span class="line line-9"></span>
+            </div>
+            <div class="text">Loading</div>
+        </div>
+        <button class="tj-primary-btn">Cancel Preloader</button>
+    </div>
     
     <header class="header-area header-sticky">
         <div class="container">
@@ -25,17 +42,37 @@
                             <nav id="mobile-menu">
                                 <ul>
                                     <li>
-                                        <a href="index.html">Home</a>
+                                        <a href="index.html" class="active">Home</a>
                                     </li>
                                     <li>
-                                        <a href="about-us.html">About Us</a>
+                                        <a href="about.html">About Us</a>
                                     </li>
-                                    <li>
-                                        <a href="service.html">Services</a>
+                                    <li class="has-dropdown">
+                                        <a href="#">Services</a>
+                                        <ul class="sub-menu">
+                                            <li>
+                                                <a href="social-promotion.html">Social Promotion</a>
+                                            </li>
+                                            <li>
+                                                <a href="portfolio-building.html">Portfolio Building</a>
+                                            </li>
+                                            <li>
+                                                <a href="web-development.html">Website Development</a>
+                                            </li>
+                                            <li>
+                                                <a href="sms-service.html">SMS Services</a>
+                                            </li>
+                                            <li>
+                                                <a href="voice-call.html">Voice Call Service</a>
+                                            </li>
+                                            <li>
+                                                <a href="miss-call.html">Miss call Alert</a>
+                                            </li>
+                                        </ul>
                                     </li>   
-                                    <li>
-                                        <a href="blog-grid.html">Case Study</a>
-                                    </li>
+                                    <!-- <li>
+                                        <a href="case-study.html">Case Study</a>
+                                    </li> -->
                                     <li><a href="contact.html">Contact</a></li>
                                 </ul>
                             </nav>
@@ -87,7 +124,7 @@
                                 <img class="image" src="images/hero-1.png" alt="Image">
                             </div>
                             <div class="group-image2 pulse">
-                                <img style="animation-delay: 100ms;" src="images/hero-2.png" alt="Image" class="fadeInLeft">
+                                <img style="animation-delay: 100ms;" src="images/hero-2.png" alt="Image" class="fade-in-left">
                             </div>
                             <img class="group-image3" src="images/shape-5.svg" alt="Image">
                             <img class="group-image4 pulse" src="images/shape-6.svg" alt="Image">
@@ -159,7 +196,7 @@
                         </div>
                     </div>
                     <div class="col-xl-6 col-lg-12">
-                        <div class="about-content-one" style="animation-delay: 300ms;">
+                        <div class="about-content-one reveal bounce-in-right">
                             <div class="tj-sec-heading">
                                 <span class="sub-title"> About Us</span>
                                 <h2 class="sec-title">Making Your Business More Unique</h2>
@@ -196,7 +233,7 @@
             <div class="container">
                 <div class="row">
                     <div class="col-lg-12">
-                        <div class="tj-sec-heading text-center sal-animate" data-sal="slide-up" data-sal-duration="1000" data-sal-delay="600">
+                        <div class="tj-sec-heading text-center">
                             <span class="sub-title"> Our Services</span>
                             <h2 class="sec-title">Service We Provide</h2>
                             <div class="desc">
@@ -209,17 +246,17 @@
                     </div>
                 </div>
                 <div class="row">
-                    <div class="col-lg-4 col-md-6 col-sm-12" style="animation-delay: 100ms;">
+                    <div class="col-lg-4 col-md-6 col-sm-12 reveal fadeInUp" data-wow-delay="100ms">
                         <div class="tj-service-item text-center">
                             <div class="service-inner">
                                 <div class="service-icon">
-                                    <img src="images/portfolio.png" alt="" class="service-icons">
+                                    <img src="images/social-media.png" alt="" class="service-icons">
                                     <img class="image-1" src="images/service-image.svg" alt="Shape">
                                     <img class="image-2" src="images/service-image1.svg" alt="Shape">
                                 </div>
                                 <div class="service-content">
                                     <h4 class="title-link">
-                                        <a href="service-details.html">Logo Design</a>
+                                        <a href="social-promotion.html">Social Promotion</a>
                                     </h4>
                                     <p>look like readable English. Many desktop publishing packages and web page editors now use Lorem Ipsum, and a search for
                                     </p>
@@ -227,7 +264,7 @@
                             </div>
                         </div>
                     </div>
-                    <div class="col-lg-4 col-md-6 col-sm-12" style="animation-delay: 200ms;">
+                    <div class="col-lg-4 col-md-6 col-sm-12 reveal fadeInUp" data-wow-delay="200ms" style="animation-delay: 200ms;">
                         <div class="tj-service-item text-center">
                             <div class="service-inner">
                                 <div class="service-icon">
@@ -237,7 +274,7 @@
                                 </div>
                                 <div class="service-content">
                                     <h4 class="title-link">
-                                        <a href="service-details.html">Web Design</a>
+                                        <a href="portfolio-building.html">Portfolio Building</a>
                                     </h4>
                                     <p>
                                         look like readable English. Many desktop publishing packages and web page
@@ -247,18 +284,18 @@
                             </div>
                         </div>
                     </div>
-                    <div class="col-lg-4 col-md-6 col-sm-12" style="animation-delay: 300ms;">
+                    <div class="col-lg-4 col-md-6 col-sm-12 reveal fadeInUp" data-wow-delay="300ms" style="animation-delay: 300ms;">
                         <div class="tj-service-item text-center">
                             <div class="service-inner">
                                 <div class="service-icon">
-                                    <img src="images/portfolio.png" alt="" class="service-icons">
+                                    <img src="images/web-design.png" alt="" class="service-icons">
                                     <img class="image-1" src="images/service-image.svg" alt="Shape">
                                     <img class="image-2" src="images/service-image1.svg" alt="Shape">
                                 </div>
                                 <div class="service-image"></div>
                                 <div class="service-content">
                                     <h4 class="title-link">
-                                        <a href="service-details.html">Mobile Apps</a>
+                                        <a href="service-details.html">Website Development</a>
                                     </h4>
                                     <p>
                                         look like readable English. Many desktop publishing packages and web page
@@ -269,17 +306,17 @@
                         </div>
                     </div>
                     <div class="row mt-5">
-                        <div class="col-lg-4 col-md-6 col-sm-12" style="animation-delay: 400ms;">
+                        <div class="col-lg-4 col-md-6 col-sm-12 reveal fadeInUp" data-wow-delay="100ms" style="animation-delay: 100ms;">
                             <div class="tj-service-item text-center">
                                 <div class="service-inner">
                                     <div class="service-icon">
-                                        <img src="images/portfolio.png" alt="" class="service-icons">
+                                        <img src="images/sms.png" alt="" class="service-icons">
                                         <img class="image-1" src="images/service-image.svg" alt="Shape">
                                         <img class="image-2" src="images/service-image1.svg" alt="Shape">
                                     </div>
                                     <div class="service-content">
                                         <h4 class="title-link">
-                                            <a href="service-details.html">Digital Marketing</a>
+                                            <a href="service-details.html">SMS Services</a>
                                         </h4>
                                         <p>
                                             look like readable English. Many desktop publishing packages and web page
@@ -289,17 +326,17 @@
                                 </div>
                             </div>
                         </div>
-                        <div class="col-lg-4 col-md-6 col-sm-12" style="animation-delay: 500ms;">
+                        <div class="col-lg-4 col-md-6 col-sm-12 reveal fadeInUp" data-wow-delay="200ms" style="animation-delay: 200ms;">
                             <div class="tj-service-item text-center">
                                 <div class="service-inner">
                                     <div class="service-icon">
-                                        <img src="images/portfolio.png" alt="" class="service-icons">
+                                        <img src="images/voice-call.png" alt="" class="service-icons">
                                         <img class="image-1" src="images/service-image.svg" alt="Shape">
                                         <img class="image-2" src="images/service-image1.svg" alt="Shape">
                                     </div>
                                     <div class="service-content">
                                         <h4 class="title-link">
-                                            <a href="service-details.html">Digital Marketing</a>
+                                            <a href="service-details.html">Voice Call Services</a>
                                         </h4>
                                         <p>
                                             look like readable English. Many desktop publishing packages and web page
@@ -309,17 +346,17 @@
                                 </div>
                             </div>
                         </div>
-                        <div class="col-lg-4 col-md-6 col-sm-12" style="animation-delay: 600ms;">
+                        <div class="col-lg-4 col-md-6 col-sm-12 reveal fadeInUp" data-wow-delay="300ms" style="animation-delay: 300ms;">
                             <div class="tj-service-item text-center">
                                 <div class="service-inner">
                                     <div class="service-icon">
-                                        <img src="images/portfolio.png" alt="" class="service-icons">
+                                        <img src="images/misscall.png" alt="" class="service-icons">
                                         <img class="image-1" src="images/service-image.svg" alt="Shape">
                                         <img class="image-2" src="images/service-image1.svg" alt="Shape">
                                     </div>
                                     <div class="service-content">
                                         <h4 class="title-link">
-                                            <a href="service-details.html">Digital Marketing</a>
+                                            <a href="service-details.html">Miss call Alert</a>
                                         </h4>
                                         <p>
                                             look like readable English. Many desktop publishing packages and web page
@@ -358,7 +395,7 @@
             <div class="container">
                 <div class="row">
                     <div class="col-lg-12">
-                        <div class="tj-sec-heading" style="animation-delay: 300ms;">
+                        <div class="tj-sec-heading reveal fadeInLeft">
                             <span class="sub-title">F,A,Q</span>
                             <h2 class="sec-title">Our Expert Answers</h2>
                             <div class="desc">
@@ -395,7 +432,7 @@
                         </div>
                     </div>
                     <div class="col-lg-6">
-                        <div class="tj-faq-area">
+                        <div class="tj-faq-area reveal fadeInRight">
                             <div class="accordion tj-faq-style" id="accordionExample">
                                 <div class="accordion-item">
                                     <h2 class="accordion-header" id="headingOne">
@@ -471,7 +508,7 @@
         <section class="case-study-section">
             <div class="container">
                 <div class="row">
-                    <div class="col-lg-12 sal-animate" data-sal="slide-up" data-sal-duration="1000" data-sal-delay="100">
+                    <div class="col-lg-12">
                         <div class="tj-sec-heading text-center">
                             <span class="sub-title">Latest Case Study</span>
                             <h2 class="sec-title">Latest Case Studies</h2>
@@ -486,7 +523,7 @@
                     </div>
                 </div>
                 <div class="row">
-                    <div class="col-lg-4 col-md-6 sal-animate" data-sal="slide-up" data-sal-duration="1000" data-sal-delay="100">
+                    <div class="col-lg-4 col-md-6">
                         <div class="tj-case-study-item">
                             <div class="case-study-image">
                                 <a href="blog-details.html"><img src="images/blog-1.jpg" alt="Image"></a>
@@ -507,7 +544,7 @@
                             </div>
                         </div>
                     </div>
-                    <div class="col-lg-4 col-md-6 sal-animate" data-sal="slide-up" data-sal-duration="1000" data-sal-delay="200">
+                    <div class="col-lg-4 col-md-6">
                         <div class="tj-case-study-item">
                             <div class="case-study-image">
                                 <a href="blog-details.html"><img src="images/blog-2.jpg" alt="Image"></a>
@@ -528,7 +565,7 @@
                             </div>
                         </div>
                     </div>
-                    <div class="col-lg-4 col-md-6 sal-animate" data-sal="slide-up" data-sal-duration="1000" data-sal-delay="300">
+                    <div class="col-lg-4 col-md-6">
                         <div class="tj-case-study-item">
                             <div class="case-study-image">
                                 <a href="blog-details.html"><img src="images/blog-1.jpg" alt="Image"></a>
@@ -566,7 +603,7 @@
                 <div class="row">
                     <div class="col-lg-12">
                         <div class="contact-form-area">
-                            <div class="contact-left-content sal-animate" data-sal="slide-right" data-sal-duration="1000" data-sal-delay="300">
+                            <div class="contact-left-content reveal fadeInLeft">
                                 <div class="tj-sec-heading">
                                     <span class="sub-title">Get In touch</span>
                                     <h2 class="sec-title">Have any Project Plan In your Mind?</h2>
@@ -597,7 +634,7 @@
                                     </div>
                                 </div>
                             </div>
-                            <form action="#" class="contact-form-box sal-animate" data-sal="slide-left" data-sal-duration="1000" data-sal-delay="300">
+                            <form action="#" class="contact-form-box reveal fadeInRight">
                                 <div class="form-input">
                                     <label>Your Name</label>
                                     <input type="text" class="form__input" placeholder="" required="">
