@@ -72,9 +72,9 @@
                                             </li>
                                         </ul>
                                     </li>   
-                                    <!-- <li>
-                                        <a href="blog-grid.html">Case Study</a>
-                                    </li> -->
+                                    <li>
+                                        <a href="case-study.html">Case Study</a>
+                                    </li>
                                     <li><a href="contact.html">Contact</a></li>
                                 </ul>
                             </nav>
@@ -295,9 +295,9 @@
             <div class="container testimonial-slider">
                 <div class="row">
                     <div class="col-lg-12">
-                        <div class="swiper tj-testimonial-slider mySwiper">
-                            <div class="swiper-wrapper" id="swiper-wrapper-3f8107335510033c25" aria-live="off" >
-                                <div class="swiper-slide " style="width: 484.667px; margin-right: 30px;">
+                        <div class="swiper mySwiper">
+                            <div class="swiper-wrapper">
+                                <div class="swiper-slide">
                                     <div class="testimonial-item">
                                         <div class="testimonial-top-content">
                                             <div class="testimonial-left-content">
@@ -337,7 +337,7 @@
                                         </p>
                                     </div>
                                 </div>
-                                <div class="swiper-slide " style="width: 484.667px; margin-right: 30px;">
+                                <div class="swiper-slide">
                                     <div class="testimonial-item">
                                         <div class="testimonial-top-content">
                                             <div class="testimonial-left-content">
@@ -377,7 +377,7 @@
                                         </p>
                                     </div>
                                 </div>
-                                <div class="swiper-slide " style="width: 484.667px; margin-right: 30px;">
+                                <div class="swiper-slide">
                                     <div class="testimonial-item">
                                         <div class="testimonial-top-content">
                                             <div class="testimonial-left-content">
@@ -419,7 +419,7 @@
                                 </div>
                             </div>
                             <div class="swiper-pagination"></div>
-                    </div>
+                        </div>
                 </div>
             </div>
             <div class="testimonial-section-shape">
@@ -554,17 +554,45 @@
                             </div>
                         </div>
                     </div>
-                    <div class="col-lg-4 col-md-6 col-sm-6">
+                    <div class="col-lg-2 col-md-6 col-sm-6">
                         <div class="footer-widget footer1-col-4">
                             <h4 class="footer_title">Company</h4>
                             <div class="widget_nav_menu">
                                 <div class="footer-menu">
                                     <ul>
-                                        <li><a href="#">About us</a></li>
-                                        <li><a href="#">Services</a></li>
-                                        <li><a href="#">Contact Us</a></li>
-                                        <li><a href="#">Out Team</a></li>
-                                        <li><a href="#">Pricing</a></li>
+                                        <li><a href="index.html">Home</a></li>
+                                        <li><a href="about.html">About us</a></li>
+                                        <li><a href="case-study.html">Case Study</a></li>
+                                        <li><a href="contact.html">Contact Us</a></li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-2 col-md-6 col-sm-6">
+                        <div class="footer-widget footer1-col-3">
+                            <h4 class="footer_title">Services</h4>
+                            <div class="widget_nav_menu">
+                                <div class="footer-menu">
+                                    <ul>
+                                        <li>
+                                            <a href="social-promotion.html">Social Promotion</a>
+                                        </li>
+                                        <li>
+                                            <a href="portfolio-building.html">Portfolio Building</a>
+                                        </li>
+                                        <li>
+                                            <a href="web-development.html">Website Development</a>
+                                        </li>
+                                        <li>
+                                            <a href="sms-service.html">SMS Services</a>
+                                        </li>
+                                        <li>
+                                            <a href="voice-call.html">Voice Call Service</a>
+                                        </li>
+                                        <li>
+                                            <a href="miss-call.html">Miss call Alert</a>
+                                        </li>
                                     </ul>
                                 </div>
                             </div>
@@ -578,18 +606,19 @@
                                     <ul>
                                         <li>
                                             <span><i class="fa-sharp fa-regular fa-envelope"></i></span>
-                                            <a href="mailto:Info@gmail.com">Info@gmail.com</a>
+                                            <a href="mailto:contact@electionplus.com">contact@electionplus.com</a>
                                         </li>
                                         <li>
-                                            <span><i class="fa-solid fa-globe"></i></span><a href="#">www.website.com</a>
+                                            <span><i class="fa-solid fa-globe"></i></span><a href="#">www.electionplus.com</a>
                                         </li>
                                         <li>
                                             <span><i class="fa-sharp fa-solid fa-location-dot"></i></span>
-                                            <a href="#">225 Marion Street, Columbia</a>
+                                            <a href="#">Office No.: 201, Mahaveer Corner, VIIT, college rd, opp. Swami Vivekananda Garden, Kondhwa, Pune, Maharashtra 411048
+                                            </a>
                                         </li>
                                         <li>
                                             <span><i class="fa-solid fa-phone-volume"></i></span>
-                                            <a href="tel:+00123456789">+ 00 123 456 789</a>
+                                            <a href="tel:+918788953077">+ 91 87889 53077</a>
                                         </li>
                                     </ul>
                                 </div>
@@ -642,22 +671,42 @@
 
     <!-- script files -->
     <script src="//ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
-
   <!-- Swiper JS -->
   <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+
 
     <script src="script.js"></script>
 
       <!-- Initialize Swiper -->
   <script>
     var swiper = new Swiper(".mySwiper", {
-        slidesPerView: 3,
-      spaceBetween: 30,
-        pagination: {
+      slidesPerView: 1,
+      spaceBetween: 10,
+      pagination: {
         el: ".swiper-pagination",
         clickable: true,
       },
+      breakpoints: {
+
+        450: {
+          slidesPerView: 1,
+          spaceBetween: 20,
+        },
+        640: {
+          slidesPerView: 2,
+          spaceBetween: 20,
+        },
+        768: {
+          slidesPerView: 2,
+          spaceBetween: 40,
+        },
+        1024: {
+          slidesPerView: 3,
+          spaceBetween: 50,
+        },
+      },
     });
+  </script>
   </script> 
 </body>
 </html>

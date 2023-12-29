@@ -290,6 +290,27 @@ img {
     padding: 15px 0;
 }
 
+.tj-menu-area li.has-dropdown:hover > a::after {
+    background: linear-gradient(90deg, #20d9a1 0%, #5f39ff 100%);
+    background-clip: text;
+    -webkit-background-clip: text;
+}
+
+.tj-menu-area li.has-dropdown > a::after {
+    position: absolute;
+    top: 2px;
+    right: -18px;
+    line-height: 1;
+    content: "+";
+    font-family: "Font Awesome 6 Pro";
+    font-size: 14px;
+    -webkit-transition: all 0.1s ease-in-out 0s;
+    -moz-transition: all 0.1s ease-in-out 0s;
+    -ms-transition: all 0.1s ease-in-out 0s;
+    -o-transition: all 0.1s ease-in-out 0s;
+    transition: all 0.1s ease-in-out 0s;
+}
+
 .tj-menu-area li a.active, .tj-menu-area li a:hover {
     color: transparent;
 }
@@ -358,9 +379,9 @@ img {
     padding-bottom: 0;
 }
 
-.tj-menu-area li.has-dropdown a {
+/* .tj-menu-area li.has-dropdown a {
     padding: 15px 20px 15px 0;
-}
+} */
 
 .tj-menu-area li .sub-menu li a {
     position: relative;
@@ -1011,7 +1032,7 @@ img {
     margin-bottom: 0;
 }
 
-/* .testimonial-slider .swiper-pagination {
+.testimonial-slider .swiper-pagination {
     width: auto;
     right: 25%;
     left: auto;
@@ -1043,7 +1064,7 @@ img {
     position: relative;
     border-radius: 50px;
     background: linear-gradient(90deg, #20d9a1 0%, #5f39ff 100%);
-} */
+}
 
 
 .testimonial-section-shape .testmonial-shape1 {
@@ -1376,6 +1397,225 @@ img {
 
 
 
+/****************  CASE STUDY DETAIL  ****************/
+/****************  PAGE STARTS ****************/
+
+.tj-case-study-details {
+    padding-top: 110px;
+    padding-bottom: 120px;
+    position: relative;
+    overflow: hidden;
+}
+
+.details-item {
+    margin-bottom: 60px;
+}
+
+.details-item .blog-thumb-image {
+    position: relative;
+}
+
+.sidebar-wrapper .blog-thumb-image {
+    margin-bottom: 20px;
+}
+
+.sidebar-wrapper .blog-thumb-image img {
+    border-radius: 20px;
+}
+
+.blog-meta {
+    margin-bottom: 15px;
+}
+
+.blog-meta span img{
+    font-size: 15px;
+    margin-right: 10px;
+    position: relative;
+}
+
+.blog-meta span {
+    font-size: 14px;
+    margin-right: 35px;
+    font-weight: 700;
+    color: #727272;
+}
+
+.blog-meta span a{
+    color: #727272;
+}
+
+.blog-meta span:last-child {
+    margin-right: 0;
+}
+
+.sidebar-wrapper .details-title {
+    margin-bottom: 15px;
+}
+
+.sidebar-wrapper .details-title .title {
+    font-size: 25px;
+    margin-bottom: 0;
+}
+
+.details-item .blog-button {
+    margin-top: 30px;
+}
+
+blockquote {
+    background: linear-gradient(90deg, #20D9A1 0%, #5f39ff 100%);
+    border-radius: 10px;
+    position: relative;
+    padding: 30px 33px;
+    margin-bottom: 60px;
+    z-index: 3;
+}
+
+/* blockquote::before {
+    content: "\f10d";
+    font-family: "Font Awesome 6 Pro";
+    background-size: contain;
+    display: inline-block;
+    font-size: 50px;
+    color: var(--tj-color-common-white);
+} */
+
+blockquote p {
+    color: #fff;
+    font-family: 'Nunito Sans';
+    font-weight: 600;
+    margin-bottom: 10px;
+}
+
+blockquote cite {
+    color: #fff;
+    font-family: 'Nunito Sans';
+    font-weight: 700;
+    position: relative;
+    padding-left: 85px;
+}
+
+blockquote cite::before {
+    position: absolute;
+    content: "";
+    top: 50%;
+    transform: translateY(-50%);
+    left: 0;
+    width: 62px;
+    height: 2px;
+    background: #3f8acf;
+}
+
+.tj-case-study-details .blog-section-shape .shape-1 {
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+.tj-case-study-details .blog-section-shape .shape-2 {
+    position: absolute;
+    top: 15%;
+    right: 30px;
+}
+
+.tj-case-study-details .blog-section-shape .shape-3 {
+    position: absolute;
+    top: 18%;
+    right: -80px;
+}
+
+.tj-case-study-details .blog-section-shape .shape-4 {
+    position: absolute;
+    bottom: 15%;
+    left: -50px;
+}
+
+.tj-case-study-details .blog-section-shape .shape-5 {
+    position: absolute;
+    bottom: 10%;
+    left: 0;
+}
+
+.tj-blog-widget {
+    background: linear-gradient(90deg, rgba(32, 217, 161, 0.08) 0%, rgba(95, 57, 255, 0.08) 100%);
+    margin-bottom: 24px;
+    border-radius: 10px;
+    padding: 40px;
+    position: relative;
+    z-index: 3;
+}
+
+.tj-blog-widget .side-title {
+    font-size: 25px;
+    color: #705fff;
+    position: relative;
+    margin-bottom: 35px;
+}
+
+.tj-blog-widget .side-title::before {
+    position: absolute;
+    content: "";
+    bottom: -10px;
+    left: 0;
+    width: 90px;
+    height: 3px;
+    background: #705fff;
+}
+
+.sidebar-recent-post .single-post {
+    margin-bottom: 25px;
+}
+
+.sidebar-recent-post .single-post .post-image {
+    margin-right: 20px;
+    max-width: 75px;
+    width: 100%;
+}
+
+.sidebar-recent-post .single-post .post-image a {
+    display: inline-block;
+    width: 100%;
+}
+
+.sidebar-recent-post .single-post .post-content .sub-title {
+    font-size: 14px;
+    font-weight: 700;
+    display: block;
+    margin-bottom: 10px;
+    color: #727272;
+}
+
+.sidebar-recent-post .single-post .post-content .title-link {
+    margin-bottom: 0;
+}
+
+.sidebar-recent-post .single-post .post-content .sub-title i {
+    color: #705fff;
+    font-size: 18px;
+    margin-right: 15px;
+}
+
+.sidebar-recent-post .single-post .post-content .title-link a {
+    transition: 0.4s;
+    color: #3a3a3a;
+    font-weight: 600;
+}
+
+.sidebar-recent-post .single-post .post-content .title-link a:hover {
+    color: #705fff ;
+}
+
+h5{
+    font-size: 18px;
+}
+
+
+/****************  CASE STUDY DETAIL  ****************/
+/****************  PAGE ENDS ****************/
+
+
+
+
+
 
 
 
@@ -1632,12 +1872,17 @@ img {
 
 .footer-area .footer-menu-area .widget_nav_menu .footer-menu ul li a {
     color: #fafffd;
+    font-size: 15px;
     font-family: 'Ubuntu';
     font-weight: 400;
     background: linear-gradient(90deg, #20d9a1 0%, #5f39ff 100%);
     background-clip: text;
     -webkit-background-clip: text;
     transition: 0.4s;
+}
+
+.footer-area .footer-menu-area .widget_nav_menu .footer-menu ul li a:hover {
+    color: transparent;
 }
 
 .footer-area .footer-menu-area .widget_contact_menu .footer-menu ul li {

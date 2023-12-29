@@ -235,6 +235,27 @@ h1, h2, h3, h4, h5, h6 {
     padding: 15px 0;
 }
 
+.tj-menu-area li.has-dropdown:hover > a::after {
+    background: linear-gradient(90deg, #20d9a1 0%, #5f39ff 100%);
+    background-clip: text;
+    -webkit-background-clip: text;
+}
+
+.tj-menu-area li.has-dropdown > a::after {
+    position: absolute;
+    top: 2px;
+    right: -18px;
+    line-height: 1;
+    content: "+";
+    font-family: "Font Awesome 6 Pro";
+    font-size: 14px;
+    -webkit-transition: all 0.1s ease-in-out 0s;
+    -moz-transition: all 0.1s ease-in-out 0s;
+    -ms-transition: all 0.1s ease-in-out 0s;
+    -o-transition: all 0.1s ease-in-out 0s;
+    transition: all 0.1s ease-in-out 0s;
+}
+
 .tj-menu-area li a.active, .tj-menu-area li a:hover {
     color: transparent;
 }
@@ -303,9 +324,9 @@ h1, h2, h3, h4, h5, h6 {
     padding-bottom: 0;
 }
 
-.tj-menu-area li.has-dropdown a {
+/* .tj-menu-area li.has-dropdown a {
     padding: 15px 20px 15px 0;
-}
+} */
 
 .tj-menu-area li .sub-menu li a {
     position: relative;
@@ -1309,6 +1330,10 @@ img {
     overflow: hidden;
 }
 
+.tj-case-study-item .case-study-content-area .title-link a:hover {
+    color: transparent;
+}
+
 .tj-case-study-item .case-study-image {
     margin-bottom: 20px;
     position: relative;
@@ -1350,6 +1375,25 @@ img {
 
 .tj-case-study-item .case-study-content-area {
     padding: 0 30px;
+}
+
+.case-study-meta {
+    margin-bottom: 15px;
+    color: #727272;
+}
+
+.case-study-meta span a{
+    color: #727272;
+}
+
+.case-study-meta span {
+    font-size: 14px;
+    margin-right: 35px;
+    font-weight: 700;
+}
+
+.case-study-meta span:last-child {
+    margin-right: 0;
 }
 
 .tj-case-study-item .case-study-content-area .title-link {
@@ -1682,12 +1726,17 @@ select, .nice-select, input:not([type=submit]):not([type=radio]):not([type=check
 
 .footer-area .footer-menu-area .widget_nav_menu .footer-menu ul li a {
     color: #fafffd;
+    font-size: 15px;
     font-family: 'Ubuntu';
     font-weight: 400;
     background: linear-gradient(90deg, #20d9a1 0%, #5f39ff 100%);
     background-clip: text;
     -webkit-background-clip: text;
     transition: 0.4s;
+}
+
+.footer-area .footer-menu-area .widget_nav_menu .footer-menu ul li a:hover {
+    color: transparent;
 }
 
 .footer-area .footer-menu-area .widget_contact_menu .footer-menu ul li {
@@ -2289,6 +2338,10 @@ select, .nice-select, input:not([type=submit]):not([type=radio]):not([type=check
 
     .tj-case-study-item .case-study-image img {
         width: 100%;
+    }
+
+    .case-study-meta span {
+        margin-right: 15px;
     }
 
     /* contact section */
