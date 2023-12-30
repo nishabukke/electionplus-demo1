@@ -2406,6 +2406,10 @@ h5{
         .about-image1::before{
             display: none;
         }
+
+        .testimonial-item {
+            margin-bottom: 70px;
+        }
     
         /* service section */
     
@@ -2648,6 +2652,20 @@ h5{
         .sidebar-wrapper .details-title .title {
             font-size: 22px;
         }
+
+        /* testimonial */
+
+        .testimonial-slider {
+            margin-right: 15px;
+        }
+
+        .testimonial-slider {
+            margin-left: 0;
+        }
+
+        .blog-meta span {
+            margin-right: 10px;
+        }
     }
     
     @media screen and (max-width: 450px) {
@@ -2729,6 +2747,7 @@ h5{
             max-width: 260px;
             padding: 35px;
         }
+
     
         /* faq section */
     
