@@ -611,7 +611,7 @@ img {
 /* about section */
 
 .about-section {
-    padding-top: 230px;
+    padding-top: 180px;
     padding-bottom: 150px;
     position: relative;
 }
@@ -873,7 +873,78 @@ img {
     }
 }
 
+/* vision mission section */
 
+.vision-mission-section{
+    background: linear-gradient(90deg, #1c1c1c -25.81%, #373636 116.04%);
+    padding: 57px 0;
+    position: relative;
+    overflow: hidden;
+}
+
+.vision-mission-section-shape .vision_shape{
+    position: absolute;
+    left: 0;
+    bottom: 0;
+}
+
+.vision-mission-section-shape .vision_shape1{
+    position: absolute;
+    right: 0;
+    bottom: 0;
+}
+
+.vision-item{
+    border-radius: 20px;
+    margin-bottom: 30px;
+    transition: 0.4s;
+    position: relative;
+    z-index: 3;
+}
+
+
+.vision-inner{
+    background-color: #f8f7ff;
+    border-radius: 20px;
+    transition: 0.4s;
+    padding-bottom: 0;
+    min-height: 380px;
+}
+
+.vision-icon{
+    background: #e4e1ff;
+    width: 90px;
+    height: 90px;
+    line-height: 90px;
+    text-align: center;
+    display: inline-block;
+    border-radius: 10px;
+    margin-top: -35px;
+    margin-left: 30px;
+    transition: 0.4s;
+    transform: rotate(0);
+}
+
+.vision-content{
+    padding: 20px 30px 35px;
+}
+
+.vision-content .title-link{
+    margin-bottom: 15px;
+    background: linear-gradient(90deg, #20d9a1 0%, #5f39ff 100%);
+    background-clip: text;
+    -webkit-background-clip: text;
+    color: #3a3a3a;
+    transition: 0.1s;
+}
+
+.vision-content p{
+    margin-bottom: 0;
+}
+
+.vision-item .vision-inner:hover .vision-icon {
+    transform: rotate(-360deg);
+}
 
 /* testimonial section */
 
@@ -1092,6 +1163,202 @@ img {
     left: 7%;
 }
 
+/* why choose section */
+
+.why-choose-section{
+    padding-top: 150px;
+    padding-bottom: 20px;
+    position: relative;
+}
+
+.why-choose-section-shape{
+    top: 40%;
+    left: 83px;
+    position: absolute;
+    width: 150px;
+    height: 150px;
+    mask-image: url('images/shape-60.svg');
+    mask-repeat: no-repeat;
+    mask-position: center;
+    mask-size: contain;
+    background: #705fff;
+}
+
+.why-choose-section .tj-sec-heading{
+    margin-bottom: 40px;
+    max-width: 580px;
+    margin-left: 0;
+}
+
+.secondary-color {
+    font-size: 35px;
+    font-family: 'Bilbo Swash Caps', cursive;;
+    letter-spacing: 3.5px;
+    font-weight: 400;
+    display: inline-block;
+    margin-bottom: 10px;
+    line-height: 1.2;
+    color: #5f39ff;
+}
+
+.why-choose-item{
+    border: 1px solid #dcdee7;
+    border-radius: 8px;
+    padding: 30px;
+    position: relative;
+    z-index: 3;
+    margin-bottom: 100px;
+    transition: 0.4s;
+    background: #fff;
+}
+
+.why-choose-item:before{
+    position: absolute;
+    content: "";
+    top: 0;
+    left: 0;
+    width: 60%;
+    height: 100%;
+    background: #fafafc;
+    border-radius: 8px;
+    z-index: -1;
+    opacity: 0;
+    visibility: hidden;
+}
+
+.why-choose-item .why-choose-icon{
+    width: 60px;
+    height: 60px;
+    line-height: 60px;
+    text-align: center;
+    display: inline-block;
+    background: #e4e1ff;
+    border-radius: 5px;
+    color: #3a3a3a;
+    font-size: 30px;
+    margin-bottom: 20px;
+    transform: rotate(0);
+}
+
+.why-choose-item:before{
+    position: absolute;
+    content: "";
+    top: 0;
+    left: 0;
+    width: 60%;
+    height: 100%;
+    background: #fafafc;
+    border-radius: 8px;
+    z-index: -1;
+    opacity: 0;
+    visibility: hidden;
+}
+
+.why-choose-item:hover{
+    border-color: #705fff;
+}
+
+.why-choose-item:hover::before{
+    opacity: 1;
+    visibility: visible;
+}
+
+.why-choose-item:hover .border-inner::after {
+    border-bottom: 15px solid #705fff;
+}
+
+.why-choose-item .title{
+    margin-bottom: 20px;
+    transition: 0.4s;
+}
+
+.why-choose-item .title a{
+    color: #3a3a3a;
+}
+
+.why-choose-item p{
+    margin-bottom: 0;
+    color: #727272;
+}
+
+.border-inner{
+    position: relative;
+}
+
+.border-inner::before {
+    position: absolute;
+    content: "";
+    width: 145%;
+    height: 1px;
+    bottom: -80px;
+    left: -75px;
+    background: #dcdee7;
+}
+
+.border-inner::after {
+    position: absolute;
+    content: "";
+    width: 0;
+    height: 0;
+    border-left: 9px solid transparent;
+    border-right: 9px solid transparent;
+    border-bottom: 15px solid #dcdee7;
+    transform: translateX(-50%);
+    left: 50%;
+    top: 65px;
+}
+
+.why-choose-item::after{
+    position: absolute;
+    content: "";
+    top: 0;
+    right: 45px;
+    width: 0;
+    height: 100%;
+    border-top: 270px solid #fff;
+    border-left: 100px solid transparent;
+    background: #fafafc;
+    border-radius: 8px;
+    z-index: -1;
+    opacity: 0;
+    visibility: hidden;
+}
+
+.why-choose-item:hover::after {
+    opacity: 1;
+    visibility: visible;
+}
+
+.border-inner2{
+    position: relative;
+}
+
+.border-inner2::before {
+    position: absolute;
+    content: "";
+    width: 145%;
+    height: 1px;
+    top: -83px;
+    right: -80px;
+    background: #dcdee7;
+}
+
+.border-inner2::after {
+    position: absolute;
+    content: "";
+    width: 0;
+    height: 0;
+    border-left: 9px solid transparent;
+    border-right: 9px solid transparent;
+    border-top: 15px solid #dcdee7;
+    transform: translateX(-50%);
+    left: 50%;
+    bottom: 68px;
+}
+
+.why-choose-item:hover .border-inner2::after {
+    border-top: 15px solid #705fff;
+}
 
 /****************  SERVICE DETAIL  ****************/
 /****************  PAGE STARTS ****************/
@@ -1140,6 +1407,7 @@ img {
     border-radius: 20px;
     padding: 0 30px 30px;
     margin-bottom: 20px;
+    min-height: 250px;
 }
 
 .service-wrapper .service-details-item .service-icon {
@@ -2665,6 +2933,28 @@ h5{
 
         .blog-meta span {
             margin-right: 10px;
+        }
+
+        .border-inner2::after, .border-inner2::before, .border-inner::after, .border-inner::before, .why-choose-section-shape, .why-choose-item:before, .why-choose-item::after{
+            display: none;
+        }
+
+        .why-choose-item {
+            margin-bottom: 50px;
+        }
+
+        .vision-item {
+            margin-bottom: 50px;
+        }
+
+        .vision-inner:hover .vision-icon{
+            transform: none;
+        }
+
+        .vision-icon{
+            width: 70px;
+            height: 70px;
+            line-height: 70px;
         }
     }
     

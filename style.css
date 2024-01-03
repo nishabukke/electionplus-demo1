@@ -983,6 +983,7 @@ img {
     border-radius: 10px;
     transition: 0.4s;
     padding-bottom: 0;
+    min-height: 350px;
 }
 
 .tj-service-item .service-icon {
