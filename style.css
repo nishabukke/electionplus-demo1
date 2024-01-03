@@ -503,13 +503,13 @@ img {
 .hero-image-group {
     text-align: right;
     position: relative;
-    margin-right: 0px;
+    margin-right: -175px;
     z-index: 3;
 }
 
 .hero-image-group .group-image1 {
     position: relative;
-    max-width: 300px;
+    max-width: 430px;
     width: 100%;
     margin-left: auto;
     z-index: 3;
@@ -543,9 +543,9 @@ img {
     position: absolute;
     top: 20%;
     transform: translateY(-50%);
-    left: -50px;
+    left: 0;
     z-index: 3;
-    max-width: 250px;
+    max-width: 345px;
     width: 100%;
 }
 
@@ -560,11 +560,11 @@ img {
     border-radius: 550px 500px 500px 500px;
     opacity: 3.25%;
     background: linear-gradient(180deg, #dcdee7 0%, rgba(40, 40, 40, 0.7) 100%);
-    top: 50%;
+    top: 46%;
     transform: translateY(-50%);
-    left: -20px;
-    width: 275px;
-    height: 450px;
+    left: -15px;
+    width: 346px;
+    height: 530px;
     z-index: 3;
 }
 
@@ -2114,6 +2114,30 @@ select, .nice-select, input:not([type=submit]):not([type=radio]):not([type=check
 
 .hamburger, .cross, .menu{
   display: none;
+}
+
+@media only screen and (min-width: 1200px) and (max-width: 1399px), only screen and (min-width: 992px) and (max-width: 1199px), only screen and (min-width: 768px) and (max-width: 991px), only screen and (min-width: 576px) and (max-width: 767px){
+    .hero-image-group .group-image1 {
+        max-width: 300px;
+    }
+
+    .hero-image-group .group-image2::before {
+        width: 275px;
+        height: 450px;
+        top: 50%;
+        left: -20px;
+    }
+}
+
+@media only screen and (min-width: 1200px) and (max-width: 1399px), only screen and (min-width: 992px) and (max-width: 1199px){
+    .hero-image-group {
+        margin-right: 0;
+    }
+
+    .hero-image-group .group-image2 {
+        left: -50px;
+        max-width: 250px;
+    }
 }
 
 @media only screen and (min-width: 768px) and (max-width: 991px), only screen and (min-width: 576px) and (max-width: 767px), (max-width: 575px)
