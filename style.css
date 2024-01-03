@@ -509,7 +509,7 @@ img {
 
 .hero-image-group .group-image1 {
     position: relative;
-    max-width: 430px;
+    max-width: 345px;
     width: 100%;
     margin-left: auto;
     z-index: 3;
@@ -545,7 +545,7 @@ img {
     transform: translateY(-50%);
     left: 0;
     z-index: 3;
-    max-width: 345px;
+    max-width: 250px;
     width: 100%;
 }
 
