@@ -130,7 +130,7 @@
 
 
 body{
-    margin: 0;
+    margin: 0px auto;
     padding: 0;
     max-width: 1600px;
 }
@@ -1004,6 +1004,7 @@ img {
     margin-bottom: 80px;
     transition: 0.4s;
     background: #fff;
+    min-height: 330px;
 }
 
 .testimonial-item .testimonial-top-content {
@@ -1061,6 +1062,10 @@ img {
     transition: 0.4s;
 }
 
+.testimonial-item .sub-title{
+    font-size: 14px;
+}
+
 .testimonial-item .testimonial-right-content .testimonial-rating {
     border-radius: 5px;
     background: #fff;
@@ -1107,7 +1112,7 @@ img {
     width: auto;
     right: 25%;
     left: auto;
-    bottom: 15px;
+    bottom: 80px;
     height: 8px;
     width: 168px;
     border-radius: 10px;
