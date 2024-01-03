@@ -503,7 +503,7 @@ img {
 .hero-image-group {
     text-align: right;
     position: relative;
-    margin-right: -175px;
+    margin-right: 0px;
     z-index: 3;
 }
 
