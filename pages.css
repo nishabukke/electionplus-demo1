@@ -1670,10 +1670,10 @@ img {
 
 
 
-/****************  CASE STUDY DETAIL  ****************/
+/****************  BLOGS  ****************/
 /****************  PAGE STARTS ****************/
 
-.tj-case-study-details {
+.tj-blogs-details {
     padding-top: 110px;
     padding-bottom: 120px;
     position: relative;
@@ -1778,31 +1778,31 @@ blockquote cite::before {
     background: #3f8acf;
 }
 
-.tj-case-study-details .blog-section-shape .shape-1 {
+.tj-blogs-details .blog-section-shape .shape-1 {
     position: absolute;
     top: 0;
     left: 0;
 }
 
-.tj-case-study-details .blog-section-shape .shape-2 {
+.tj-blogs-details .blog-section-shape .shape-2 {
     position: absolute;
     top: 15%;
     right: 30px;
 }
 
-.tj-case-study-details .blog-section-shape .shape-3 {
+.tj-blogs-details .blog-section-shape .shape-3 {
     position: absolute;
     top: 18%;
     right: -80px;
 }
 
-.tj-case-study-details .blog-section-shape .shape-4 {
+.tj-blogs-details .blog-section-shape .shape-4 {
     position: absolute;
     bottom: 15%;
     left: -50px;
 }
 
-.tj-case-study-details .blog-section-shape .shape-5 {
+.tj-blogs-details .blog-section-shape .shape-5 {
     position: absolute;
     bottom: 10%;
     left: 0;
@@ -1882,7 +1882,225 @@ h5{
 }
 
 
-/****************  CASE STUDY DETAIL  ****************/
+/****************  BLOGS  ****************/
+/****************  PAGE ENDS ****************/
+
+
+
+
+
+
+/****************  CASE STUDY PAGE  ****************/
+/****************  PAGE STARTS ****************/
+
+
+.case-study-section{
+    padding-top: 120px;
+    position: relative;
+}
+
+.case-study-section .group-one .shape-1 {
+    position: absolute;
+    left: 80px;
+    top: 10%;
+}
+
+.case-study-section .group-one .shape-2 {
+    position: absolute;
+    left: 0;
+    top: 15%;
+}
+
+.case-study-section .group-two .shape-1 {
+    position: absolute;
+    left: 50px;
+    bottom: 70px;
+    opacity: 0.5;
+}
+
+.case-study-section .group-two .shape-2 {
+    position: absolute;
+    left: 0;
+    bottom: 50px;
+    opacity: 0.5;
+}
+
+.case-study-section .group-three .shape-1 {
+    position: absolute;
+    right: 60px;
+    top: 10%;
+}
+
+.case-study-section .group-three .shape-2 {
+    position: absolute;
+    right: 60px;
+    top: 15%;
+}
+
+.case-study-section .group-four .shape-1 {
+    position: absolute;
+    right: 30px;
+    top: 40%;
+}
+
+.case-study-section .group-four .shape-2 {
+    position: absolute;
+    right: 30px;
+    top: 45%;
+}
+
+.case-study-wrapper{
+    position: relative;
+    z-index: 3;
+}
+
+.case-study-wrapper .case-study-img{
+    margin-bottom: 30px;
+    position: relative;
+    z-index: 3;
+}
+
+.case-study-img img{
+    border-radius: 20px;
+    width: 100%;
+}
+
+.case-study-content .title {
+    font-size: 30px;
+}
+
+.case-study-section .case-study-content .sidebar-contact {
+    position: relative;
+    background: linear-gradient(90deg, rgba(32, 217, 161, 0.08) 0%, rgba(95, 57, 255, 0.08) 100%);
+    margin-bottom: 24px;
+    border-radius: 10px;
+    padding: 40px;
+    overflow: hidden;
+}
+
+.case-study-section .case-study-content .sidebar-contact .contact-item {
+    position: relative;
+    z-index: 3;
+    display: flex;
+    margin-bottom: 20px;
+}
+
+.case-study-section .case-study-content .sidebar-contact .contact-icon {
+    width: 70px;
+    height: 70px;
+    line-height: 65px;
+    text-align: center;
+    display: inline-block;
+    border-radius: 50%;
+    border: 1px solid #705fff;
+    margin-bottom: 20px;
+    position: relative;
+    z-index: 3;
+}
+
+.case-study-section .case-study-content .sidebar-contact .contact-item .contact-icon i {
+    min-width: 38px;
+    height: 38px;
+    line-height: 40px;
+    text-align: center;
+    display: inline-block;
+    border-radius: 50%;
+    background: #d6d1ff;
+    color: #705fff;
+    font-size: 17px;
+    margin-right: 10px;
+}
+
+.case-study-section .case-study-content .sidebar-contact .contact-item .contact-icon {
+    border: none;
+    margin-bottom: 0;
+    position: relative;
+    top: -14px;
+}
+
+.case-study-section .case-study-content .sidebar-contact .contact-item .contact-content .title {
+    font-size: 22px;
+    color: #705fff;
+}
+
+.case-study-section .case-study-content .sidebar-contact .contact-item span {
+    font-size: 16px;
+    font-weight: 400;
+}
+
+.case-study-section .case-study-content .sidebar-contact .contact-svg {
+    position: absolute;
+    right: 0;
+    bottom: 0;
+}
+
+.case-study-section .case-study-content .sidebar-contact .contact-share {
+    margin-top: 20px;
+    padding-left: 55px;
+    position: relative;
+    z-index: 3;
+}
+
+.case-study-section .case-study-content .sidebar-contact .contact-share ul {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    gap: 15px;
+}
+
+.case-study-section .case-study-content .sidebar-contact .contact-share ul li a {
+    width: 30px;
+    height: 30px;
+    line-height: 30px;
+    display: inline-block;
+    border-radius: 50%;
+    background: #3a3a3a;
+    color: #fff;
+    text-align: center;
+}
+
+.case-study-section .case-study-content .sidebar-contact .contact-share ul li a i{
+    font-size: 17px;
+}
+
+.case-study-section .case-study-content .sidebar-contact .contact-share ul li svg {
+    position: relative;
+    top: -2px;
+}
+
+.case-study-section .case-study-content .sidebar-contact .contact-share ul li a svg path {
+    fill: #fff;
+}
+
+.tj-case-study-item-two{
+    border-radius: 30px 30px 30px 0px;
+    margin-bottom: 30px;
+    position: relative;
+    -webkit-transition: 0.4s;
+    transition: 0.4s;
+    overflow: hidden;
+}
+
+.tj-case-study-item-two::before{
+    position: absolute;
+    content: "";
+    bottom: -50px;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    border-radius: 30px 30px 30px 0px;
+    background: -webkit-gradient(linear, left top, left bottom, from(rgba(32, 217, 161, 0.14)), color-stop(87.25%, rgba(95, 57, 255, 0.8)));
+    background: linear-gradient(180deg, rgba(32, 217, 161, 0.14) 0%, rgba(95, 57, 255, 0.8) 87.25%);
+    opacity: 0;
+    visibility: hidden;
+}
+
+.tj-case-study-item-two .case-study-image img{
+    border-radius: 30px 30px 30px 0;
+    width: 100%;
+}
+
+/****************  CASE STUDY PAGE  ****************/
 /****************  PAGE ENDS ****************/
 
 
@@ -2760,24 +2978,24 @@ h5{
     
         /* case study section */
     
-        .case-study-section {
+        .blogs-section {
             padding-top: 80px;
             padding-bottom: 40px;
         }
     
-        .tj-case-study-item .case-study-content-area {
+        .tj-blogs-item .blogs-content-area {
             padding: 0 0;
         }
     
-        .tj-case-study-item .case-study-content-area .title-link {
+        .tj-blogs-item .blogs-content-area .title-link {
             font-size: 20px;
         }
     
-        .case-study-section-shape .case-study-bg-shape {
+        .blogs-section-shape .blogs-bg-shape {
             width: 50%;
         }
     
-        .case-study-section-shape .case-study-bg-shape1 {
+        .blogs-section-shape .blogs-bg-shape1 {
             width: 50%;
         }
     
@@ -2867,15 +3085,15 @@ h5{
             max-width: 130px;
         }
         
-        .tj-case-study-item .case-study-image {
+        .tj-blogs-item .blogs-image {
             width: 100%;
         }
     
-        .tj-case-study-item .case-study-image a {
+        .tj-blogs-item .blogs-image a {
             width: 100%;
         }
     
-        .tj-case-study-item .case-study-image img {
+        .tj-blogs-item .blogs-image img {
             width: 100%;
         }
     
