@@ -1873,7 +1873,7 @@ blockquote cite::before {
     font-weight: 600;
 }
 
-.sidebar-recent-post .single-post .post-content .title-link a:hover {
+.sidebar-recent-post .single-post .post-content .title-link a:hover, .sidebar-recent-post .single-post .post-content .title-link a.active {
     color: #705fff ;
 }
 
@@ -1883,6 +1883,23 @@ h5{
 
 
 /****************  BLOGS  ****************/
+/****************  PAGE ENDS ****************/
+
+
+/****************  BLOG DETAIL  ****************/
+/****************  PAGE ENDS ****************/
+
+
+.key-features{
+    margin-top: 15px;
+}
+
+.key-features p{
+    margin: 0;
+    padding-left: 20px;
+}
+
+/****************  BLOG DETAIL  ****************/
 /****************  PAGE ENDS ****************/
 
 
@@ -2100,6 +2117,10 @@ h5{
     width: 100%;
 }
 
+.case-study-lower{
+    margin-top: 80px;
+}
+
 /****************  CASE STUDY PAGE  ****************/
 /****************  PAGE ENDS ****************/
 
@@ -2200,7 +2221,7 @@ h5{
     margin-bottom: 20px;
 }
 
-.contact-form-box .form-input label {
+.contact-form-box .form-input label, .contact-form-box .form-textarea label {
     margin-bottom: 10px;
     color: #3a3a3a;
 }

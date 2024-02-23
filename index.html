@@ -26,7 +26,6 @@
             </div>
             <div class="text">Loading</div>
         </div>
-        <button class="tj-primary-btn">Cancel Preloader</button>
     </div>
     
     <header class="header-area header-sticky">
@@ -74,8 +73,12 @@
                                     <li>
                                         <a href="case-study.html">Case Study</a>
                                     </li>
-                                    <li>
-                                        <a href="blogs.html">Blogs</a>
+                                    <li class="has-dropdown">
+                                        <a href="#">Blogs</a>
+                                        <ul class="sub-menu">
+                                            <li><a href="blogs.html">Blogs</a></li>
+                                            <li><a href="blog-details.html">Blogs Details</a></li>
+                                        </ul>
                                     </li>
                                     <li><a href="contact.html">Contact</a></li>
                                 </ul>
@@ -122,9 +125,20 @@
                                             </li>
                                         </ul>
                                     </a>
-                                </li>
+                                    </li>
                                     <li><a href="case-study.html">Case Study</a></li>
-                                    <li><a href="blogs.html">Blogs</a></li>
+                                    <li><a href="#" class="nav__submenu">Blogs <i class="fas fa-chevron-right"></i>
+                                        <ul class="nav__sub">
+                                            <li class="nav__item"><a class="sub__close" href="#"><i class="fas fa-chevron-left"></i> Back</a></li>
+                                            <li class="nav__item">
+                                            <a class="nav__link" href="blogs.html">Blogs</a>
+                                            </li>
+                                            <li class="nav__item">
+                                            <a class="nav__link" href="blog-details.html">Blogs Details</a>
+                                            </li>
+                                        </ul>
+                                    </a>
+                                    </li>
                                     <li><a href="contact.html">Contact Us</a></li>
                                     </ul>
                                 </div> 
@@ -155,7 +169,7 @@
                                 </div>
 
                                 <div class="hero-button d-flex">
-                                    <a class="tj-primary-btn" href="blogs.html"> Explore Now</a>
+                                    <a class="tj-primary-btn" href="about.html"> Explore Now</a>
                                 </div>
                             </div>
                         </div>
@@ -185,7 +199,7 @@
             <div class="hero-scroll">
                 <img src="images/scroll-bg.svg" alt="Bg">
                 <div class="scroll-icon jump">
-                    <a href="#scroll-bottom"><img src="images/scroll.svg" alt="Icon"></a>
+                    <a href="#service-section"><img src="images/scroll.svg" alt="Icon"></a>
                 </div>
             </div>
         </section>
@@ -526,22 +540,19 @@
                     <div class="col-lg-4 col-md-6">
                         <div class="tj-case-study-item">
                             <div class="case-study-image">
-                                <a href="blogs.html"><img src="images/blog-1.jpg" alt="Image"></a>
+                                <a href="blogs.html"><img src="images/blog-01.jpg" alt="Image"></a>
                             </div>
                             <div class="case-study-content-area">
-                                <div class="case-study-meta">
+                                <!-- <div class="case-study-meta">
                                     <span><i class="flaticon-calendar"></i>23 Oct, 2023</span>
                                     <span><i class="flaticon-group"></i>By
                                         <a href="blogs.html"> Admin</a></span>
-                                </div>
+                                </div> -->
                                 <h4 class="title-link">
-                                    <a href="blogs.html">Simple Proctives that will help you better every day</a>
+                                    <a href="blogs.html">A Guide to Choosing the Right Agency for Your Political Campaign</a>
                                 </h4>
                                 <div class="desc">
-                                    <p>
-                                        Many desktop publishing packages and web page editors now use Lorem Ipsum as
-                                        their default model text, and a search for.
-                                    </p>
+                                    <p>In the fast-paced world of political campaigns, social media has become a crucial battleground for shaping public opinion, engaging voters, and driving political discourse.</p>
                                 </div>
                                 <div class="tj-case-study-button">
                                     <a href="blogs.html" class="tj-secondary-btn btn-border"><span>Read More</span></a>
@@ -552,22 +563,14 @@
                     <div class="col-lg-4 col-md-6">
                         <div class="tj-case-study-item">
                             <div class="case-study-image">
-                                <a href="blogs.html"><img src="images/blog-2.jpg" alt="Image"></a>
+                                <a href="blogs.html"><img src="images/blog-02.jpg" alt="Image"></a>
                             </div>
                             <div class="case-study-content-area">
-                                <div class="case-study-meta">
-                                    <span><i class="flaticon-calendar"></i>23 Oct, 2023</span>
-                                    <span><i class="flaticon-group"></i>By
-                                        <a href="blogs.html"> Admin</a></span>
-                                </div>
                                 <h4 class="title-link">
-                                    <a href="blogs.html">Frigilla lectus honcus anteom mode vehicul</a>
+                                    <a href="blogs.html">The Art of Strategic Planning in Political Campaigns</a>
                                 </h4>
                                 <div class="desc">
-                                    <p>
-                                        Many desktop publishing packages and web page editors now use Lorem Ipsum as
-                                        their default model text, and a search for.
-                                    </p>
+                                    <p>In the dynamic world of politics, where every move is scrutinized and each decision can make or break a campaign, strategic planning stands as the linchpin of success.</p>
                                 </div>
                                 <div class="tj-case-study-button">
                                     <a href="blogs.html" class="tj-secondary-btn btn-border"><span>Read More</span></a>
@@ -578,22 +581,14 @@
                     <div class="col-lg-4 col-md-6">
                         <div class="tj-case-study-item">
                             <div class="case-study-image">
-                                <a href="blogs.html"><img src="images/blog-1.jpg" alt="Image"></a>
+                                <a href="blogs.html"><img src="images/blog-03.jpg" alt="Image"></a>
                             </div>
                             <div class="case-study-content-area">
-                                <div class="case-study-meta">
-                                    <span><i class="flaticon-calendar"></i>23 Oct, 2023</span>
-                                    <span><i class="flaticon-group"></i>By
-                                        <a href="blogs.html"> Admin</a></span>
-                                </div>
                                 <h4 class="title-link">
-                                    <a href="blogs.html">Proin mauris risus turpis or nare felis aptent nisl</a>
+                                    <a href="blogs.html">Election 2.0: The Power of Digital Marketing for Politicians</a>
                                 </h4>
                                 <div class="desc">
-                                    <p>
-                                        Many desktop publishing packages and web page editors now use Lorem Ipsum as
-                                        their default model text, and a search for.
-                                    </p>
+                                    <p>In the dynamic landscape of modern politics, the role of digital marketing has become increasingly pivotal for politicians seeking to connect with voters, build a strong online presence, and secure electoral success.</p>
                                 </div>
                                 <div class="tj-case-study-button">
                                     <a href="blogs.html" class="tj-secondary-btn btn-border"><span>Read More</span></a>
@@ -780,11 +775,11 @@
                                             <a href="mailto:contact@electionplus.com">contact@electionplus.com</a>
                                         </li>
                                         <li>
-                                            <span><i class="fa-solid fa-globe"></i></span><a href="#">www.electionplus.com</a>
+                                            <span><i class="fa-solid fa-globe"></i></span><a href="www.electionplus.com">www.electionplus.com</a>
                                         </li>
                                         <li>
                                             <span><i class="fa-sharp fa-solid fa-location-dot"></i></span>
-                                            <a href="#">Office No.: 201, Mahaveer Corner, VIIT, college rd, opp. Swami Vivekananda Garden, Kondhwa, Pune, Maharashtra 411048
+                                            <a href="https://maps.app.goo.gl/xRwuTq5uRbMY3xrBA" target="_blank">Office No.: 201, Mahaveer Corner, VIIT College road, opp. Swami Vivekananda Garden, Kondhwa, Pune, Maharashtra 411048
                                             </a>
                                         </li>
                                         <li>
